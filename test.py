@@ -14,8 +14,19 @@ class Fizzbuzz(unittest.TestCase):
         self.assertEqual(is_divisible_by_five(5), True)
 
     def test_is_divisible_by_five_return_false(self):
-        self.assertEqual(is_divisible_by_five(6), False)    
+        self.assertEqual(is_divisible_by_five(6), False)
 
+    def test_fizzbuzz_return_FizzBuzz(self):
+        self.assertEqual(fizzbuzz(15), "FizzBuzz")
+
+    def test_fizzbuzz_return_Fizz(self):
+      self.assertEqual(fizzbuzz(3), "Fizz")
+
+    def test_fizzbuzz_return_Buzz(self):
+      self.assertEqual(fizzbuzz(5), "Buzz")
+
+    def test_fizzbuzz_return_number(self):
+      self.assertEqual(fizzbuzz(7), 7)
 
 if __name__ == "__main__":
   unittest.main()
